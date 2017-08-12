@@ -42,11 +42,16 @@
 				shift_larger_widgets_down: true,
 				shift_widgets_up: true,
 				serialize_params: function ($w, wgd) {
+
+					console.log($w);
+
 					return {
 						col: wgd.col,
 						row: wgd.row,
 						size_x: wgd.size_x,
-						size_y: wgd.size_y
+						size_y: wgd.size_y,
+						widget_id: 'test',
+						source_id: 'test'
 					};
 				},
 				collision: {
