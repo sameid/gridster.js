@@ -1,6 +1,6 @@
-/*! gridster.js - v0.6.10 - 2015-05-31
+/*! gridster.js - v0.6.10 - 2017-08-12
 * https://dsmorse.github.io/gridster.js/
-* Copyright (c) 2015 ducksboard; Licensed MIT */
+* Copyright (c) 2017 ducksboard; Licensed MIT */
 
 ;(function(root, factory) {
 	'use strict';
@@ -936,11 +936,16 @@
 				shift_larger_widgets_down: true,
 				shift_widgets_up: true,
 				serialize_params: function ($w, wgd) {
+
+					console.log($w);
+
 					return {
 						col: wgd.col,
 						row: wgd.row,
 						size_x: wgd.size_x,
-						size_y: wgd.size_y
+						size_y: wgd.size_y,
+						widget_id: 'test',
+						source_id: 'test'
 					};
 				},
 				collision: {
