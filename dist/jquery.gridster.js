@@ -937,15 +937,16 @@
 				shift_widgets_up: true,
 				serialize_params: function ($w, wgd) {
 
-					console.log($w);
+					var widget_id = $w[0].id;
+					var source_id = $w.attr('source-id');
 
 					return {
 						col: wgd.col,
 						row: wgd.row,
 						size_x: wgd.size_x,
 						size_y: wgd.size_y,
-						widget_id: 'test',
-						source_id: 'test'
+						widget_id: widget_id,
+						source_id: source_id
 					};
 				},
 				collision: {
