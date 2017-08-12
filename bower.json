@@ -1,6 +1,6 @@
 {
-  "name": "gridster",
-  "homepage": "dsmorse.github.io/gridster.js/",
+  "name": "lemon-grid",
+  "homepage": "github.com/sameid/lemon-grid.git",
   "version": "0.6.10",
   "dependencies": {
     "jquery": "^2.1.3"
